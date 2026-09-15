@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\NewsSitePortal",
+    "\\NewsSitePortal\\obj",
+    "\\NewsSitePortal\\obj\\Debug",
+    "\\NewsSitePortal\\obj\\Release",
+    "\\NewsSitePortal\\obj\\Release\\net8.0",
+    "\\NewsSitePortal\\Pages",
+    "\\NewsSitePortal\\Pages\\Shared",
+    "\\NewsSitePortal\\Properties",
+    "\\NewsSitePortal\\wwwroot"
+  ],
+  "SelectedNode": "\\NewsSitePortal\\obj\\Debug\\net8.0",
+  "PreviewInSolutionExplorer": false
+}

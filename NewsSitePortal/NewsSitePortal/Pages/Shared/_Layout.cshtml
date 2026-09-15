@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - VnE-GO</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <a class="logo" href="/">
+                <span class="logo-icon">&#8962;</span>
+            </a>
+            <span class="brand-name">VnE-GO</span>
+            <ul class="nav-links">
+                <li><a href="#">Thời sự</a></li>
+                <li><a href="#">Thế giới</a></li>
+                <li><a href="#">Kinh doanh</a></li>
+                <li><a href="#">Khoa học công nghệ</a></li>
+                <li><a href="#">Góc nhìn</a></li>
+                <li><a href="#">Spotlight</a></li>
+                <li><a href="#">Bất động sản</a></li>
+                <li><a href="#">Sức khỏe</a></li>
+                <li><a href="#">Giải trí</a></li>
+                <li><a href="#">Thể thao</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        @RenderBody()
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; @DateTime.Now.Year - Bài tập môn Công nghệ lập trình Web (ASP.NET Razor Pages)</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,42 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Trang chủ";
+}
+
+<section class="featured-article">
+    <div class="featured-image">
+        <img src="@Model.FeaturedArticle.ImageUrl" alt="@Model.FeaturedArticle.Title" />
+    </div>
+    <div class="featured-content">
+        <h1 class="featured-title">@Model.FeaturedArticle.Title</h1>
+        <p class="featured-desc">@Model.FeaturedArticle.Description</p>
+        <span class="time-ago">@Model.FeaturedArticle.TimeAgo</span>
+    </div>
+</section>
+
+<hr class="divider" />
+
+<section class="content-grid">
+    <div class="secondary-articles">
+        @foreach (var article in Model.SecondaryArticles)
+        {
+            <article class="secondary-card">
+                <h2 class="secondary-title">@article.Title</h2>
+                <div class="secondary-image">
+                    <img src="@article.ImageUrl" alt="@article.Title" />
+                </div>
+            </article>
+        }
+    </div>
+
+    <aside class="opinion-box">
+        <span class="opinion-tag">Góc nhìn</span>
+        <h3 class="opinion-title">'@Model.OpinionArticle.Title'</h3>
+        <p class="opinion-desc">@Model.OpinionArticle.Description</p>
+        <div class="opinion-meta">
+            <span class="opinion-author">@Model.OpinionArticle.Author</span>
+            <span class="opinion-comments">&#128172; @Model.OpinionArticle.CommentCount</span>
+        </div>
+    </aside>
+</section>

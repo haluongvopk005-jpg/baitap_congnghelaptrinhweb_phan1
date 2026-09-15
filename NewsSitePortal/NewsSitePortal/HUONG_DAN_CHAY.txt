@@ -1,0 +1,31 @@
+HƯỚNG DẪN CHẠY PROJECT
+=======================
+
+Yêu cầu: đã cài .NET SDK 8.0 trở lên (tải tại https://dotnet.microsoft.com/download)
+
+CÁCH 1 - Dùng Visual Studio:
+1. Giải nén file zip.
+2. Mở file NewsSitePortal.csproj bằng Visual Studio 2022 (hoặc mới hơn).
+3. Nhấn F5 hoặc nút "Run" (IIS Express) để chạy.
+4. Trình duyệt sẽ tự mở trang chủ.
+
+CÁCH 2 - Dùng dòng lệnh (Command Line / Terminal):
+1. Giải nén file zip.
+2. Mở Terminal/CMD, cd vào thư mục NewsSitePortal (thư mục chứa file .csproj).
+3. Chạy lệnh:
+       dotnet run
+4. Mở trình duyệt và truy cập địa chỉ hiển thị trong terminal
+   (thường là https://localhost:5001 hoặc http://localhost:5000).
+
+CẤU TRÚC PROJECT:
+- Program.cs                 : Cấu hình ứng dụng, khởi tạo Razor Pages.
+- Pages/Index.cshtml          : Giao diện trang chủ (View).
+- Pages/Index.cshtml.cs       : PageModel chứa dữ liệu tin tức tĩnh (Model).
+- Pages/Shared/_Layout.cshtml : Layout dùng chung (header/nav/footer).
+- Models/NewsArticle.cs       : Model đại diện cho 1 bài báo.
+- wwwroot/css/site.css        : File CSS style giao diện.
+
+Ghi chú: Ảnh minh họa dùng placeholder từ placehold.co, cần kết nối Internet
+để hiển thị ảnh. Nếu muốn dùng ảnh thật, chỉ cần thay các link trong
+Pages/Index.cshtml.cs (thuộc tính ImageUrl) hoặc để ảnh trong wwwroot/images
+rồi trỏ đường dẫn tương ứng (ví dụ: "/images/anh1.jpg").
